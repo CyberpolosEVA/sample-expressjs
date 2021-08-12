@@ -23,6 +23,11 @@ const startupMessage = `
 
 app.get('/', (req, res) => res.send('Ola!'))
 
+app.get('/marcio', (req,res) => {
+  console.log(req)
+  res.json({cod:123})
+} )
+
 for (let line of startupMessage.split("\n")) {
 	console.log(line)
 }
